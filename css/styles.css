@@ -1,0 +1,54 @@
+body, html {
+    background-image: url('images/01.jpg'); 
+    height: 100%;
+    margin: 0;
+}
+
+.background-image {
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#seatForm {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#nameInput {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#submitButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitButton:hover {
+    background-color: #555;
+}
+
+#submitButton:active {
+    background-color: #777;
+}
