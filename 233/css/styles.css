@@ -1,0 +1,74 @@
+body {
+  background-image:url("01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.form-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  font-family: 'KaiTi', '楷体', serif;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  background: none;
+  transition: color 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-button:active {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
+
+.popup {
+  display: none;
+  position: fixed; /* Fixed position to stay in place when scrolled */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  color: #fdfdac;
+  font-weight: bold;
+}
+
+.show {
+  display: block;
+}
