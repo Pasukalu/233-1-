@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>座位查询</title>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<script defer src="./js/script.js"></script>
+
+<body>
+  <div class="gohome" onclick="goto('home')" style="display: none;">
+    <img src="./images/gohome.png" alt="">
+  </div>
+  <div class="home" id="home">
+    <div onclick="goto('search')">
+      <img src="./images/search.png" alt="">
+    </div>
+  </div>
+
+  <div class="search" id="search" style="display: none;">
+    <div class="inp_wrap">
+      <h1>座位查询</h1>
+      <label for="name">请输入名字：</label>
+      <input type="text" id="name" name="name">
+      <div onclick="querySeats()">
+        <img src="./images/searchbtn.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="result" id="result" style="display: none;">
+    <div class="res_wrap" id="res_wrap">
+      <h3 style="text-align: center;" id="res_name"></h3>
+      <div id="res_main">
+        <!-- 座位信息将在这里显示 -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

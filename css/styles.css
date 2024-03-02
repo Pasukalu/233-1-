@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../images/01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+label, input[type="text"], button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-placeholder {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img1 {
+  margin-top: 5%;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/home.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flow-root;
+}
+
+.home img {
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.search {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flow-root;
+  animation: in 0.5s ease-in-out;
+}
+
+.inp_wrap {
+  position: absolute;
+  width: 270px;
+  height: 280px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fdfdac;
+}
+
+.inp_wrap input {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+  padding: 10px;
+  width: 100%;
+}
+
+.inp_wrap img {
+  margin-top: 30px;
+  height: 50px;
+}
+
+.result {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/01.png");
+  background-position: center;
+  background-size: cover;
+  display: flow-root;
+  animation: in 0.5s ease-in-out;
+}
+
+.res_wrap {
+  position: absolute;
+  width: 270px;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+  border: 10px #DCB769 double;
+  color: #fdfdac;
+}
+
+.gohome {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+  animation: in 0.5s ease-in-out;
+}
+
+
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
