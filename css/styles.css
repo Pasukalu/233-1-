@@ -63,16 +63,44 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flow-root;
+  /* display:flow-root; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.meeting{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/home.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display:flow-root; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.meeting_img{
+  width: 90%;
+  margin: auto;
+}
+
+.home>div{
+  margin-top: 45px;
+  width: 113px;
+  height: 50px;
 }
 
 .home img {
-  height: 50px;
+  /* height: 50px;
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: auto; */
+  width: 100%;
 }
 
 .search {

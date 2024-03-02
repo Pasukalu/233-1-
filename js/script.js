@@ -3,7 +3,8 @@ let page = "home";
 function goto(route) {
   document.querySelector(`#${page}`).style.display = "none";
   page = route;
-  document.querySelector(`#${page}`).style.display = "flow-root";
+//   document.querySelector(`#${page}`).style.display = "flow-root";
+  document.querySelector(`#${page}`).style.display = "flex";
   if (route == 'result') {
     document.querySelector('.gohome').style.display = "block";
   } else if (route == 'home') {
